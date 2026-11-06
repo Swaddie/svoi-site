@@ -10,7 +10,7 @@
 <main>
   <a href="./" class="logo" aria-label="Свои"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></a>
   <h1>Политика конфиденциальности</h1>
-  <p class="muted">Обновлено 6 ноября 2026 года</p>
+  <p class="muted">Обновлено 7 ноября 2026 года</p>
 
   <p>«Свои» — закрытое приложение для одной семьи. Мы собираем только то, без чего приложение не работает, не показываем рекламу и не продаём и не передаём данные для рекламы.</p>
 
@@ -21,6 +21,7 @@
     <li><b>Содержимое семьи:</b> сообщения, голосовые, фото, события, списки, места, вишлисты, карточка гостей.</li>
     <li><b>Документы:</b> названия и номера документов. Номера хранятся зашифрованными, открыть их могут только родители.</li>
     <li><b>Технические данные:</b> токен для уведомлений и название устройства.</li>
+    <li><b>Календарь телефона</b> — только если вы включили «Предлагать события» и разрешили доступ. Приложение читает события выбранных календарей на два месяца вперёд, чтобы предложить семейные. В приложении остаётся только то, что вы сами добавили в планы.</li>
   </ul>
 
   <h2>Кто видит данные</h2>
@@ -30,7 +31,8 @@
   <ul>
     <li>Supabase: база данных, файлы и вход.</li>
     <li>Google Firebase Cloud Messaging: доставка уведомлений.</li>
-    <li>Распознавание текста на картинках работает на самом телефоне, картинки никуда не отправляются.</li>
+    <li>Google Gemini (платный доступ к API): распознаёт событие на картинке или в тексте, который вы сами выбрали, и отсеивает рабочие события календаря. По условиям Google эти данные не используются для обучения моделей. Если распознавание недоступно, текст читается на самом телефоне.</li>
+    <li>Google Places: когда вы сохраняете место по ссылке из карт, мы ищем его в Google по названию и координатам, чтобы показать адрес и фото. Фото показываются с подписью автора и не хранятся у нас.</li>
     <li>Звонки внутри приложения идут напрямую между телефонами. Если прямое соединение невозможно, звук проходит через сервер-посредник в зашифрованном виде.</li>
   </ul>
 
@@ -46,7 +48,7 @@
   <hr style="border:none;border-top:1px solid var(--tint);margin:40px 0">
 
   <h1 id="en">Privacy policy</h1>
-  <p class="muted">Updated 6 November 2026</p>
+  <p class="muted">Updated 7 November 2026</p>
   <p>Svoi is a private app for a single family. We collect only what the app needs to work. We show no ads and never sell or share data for advertising.</p>
   <h2>What we store</h2>
   <ul>
@@ -55,11 +57,12 @@
     <li><b>Family content:</b> messages, voice notes, photos, events, lists, places, wish lists and the guest card.</li>
     <li><b>Documents:</b> document names and numbers. Numbers are stored encrypted and only parents can reveal them.</li>
     <li><b>Technical data:</b> a push notification token and the device name.</li>
+    <li><b>Phone calendar</b>, only if you turn on event suggestions and grant access. The app reads events from the calendars you choose for the next two months to suggest family ones. Only what you add to plans yourself is kept.</li>
   </ul>
   <h2>Who can see it</h2>
   <p>Only members of your family, within their permissions. Outsiders cannot find or join a family without an invitation.</p>
   <h2>Where it is stored</h2>
-  <p>Supabase (database, files, sign-in) and Google Firebase Cloud Messaging (notifications). Text recognition in images runs on the device. In-app calls go directly between phones, or through an encrypted relay when a direct connection isn't possible.</p>
+  <p>Supabase (database, files, sign-in) and Google Firebase Cloud Messaging (notifications). Google Gemini (paid API) recognises events in pictures or text you choose and filters work events from the calendar; under Google's terms this data is not used to train models. Google Places looks up places you save from map links to show the address and photo; photos are shown with author attribution and are not stored by us. In-app calls go directly between phones, or through an encrypted relay when a direct connection isn't possible.</p>
   <h2>Deletion</h2>
   <p>You can delete messages, photos and entries in the app. To delete your account or the whole family with all its data, email us and we will delete everything within 30 days.</p>
   <h2>Contact</h2>
